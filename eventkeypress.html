@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<script language="javascript">
+ function onlyalpha(e)
+ {
+ key= e.keyCode ;
+ if((key>=65 && key<=90) || (key>=95 && key<=122))
+ {
+  return true;
+ }
+ else
+ {
+  alert("You cannot enter numbers")
+    return false;
+ }
+ }
+ function onlynum(e)
+ {
+ key= e.keyCode ;
+ if(key>=49 && key<=57)
+ {
+  return true;
+ }
+ else
+ {
+  alert("You cannot enter alphabets")
+    return false;
+ }
+ }
+</script>
+</HEAD>
+<BODY>
+<h1 align="center">Keypress Event</h1><hr><hr>
+Name: <input type="text" id="txtname" onKeyPress="return onlyalpha(event)" /><br><br> 
+Mobile NO: <input type="text" id="txtnumber" onKeyPress="return onlynum(event)" /> 
+</BODY>
+</HTML>

@@ -1,0 +1,29 @@
+<html>
+<head>
+<script language="javascript">
+function cal()
+{
+no1=eval(document.getElementById("txtno1").value)
+no2=eval(document.getElementById("txtno2").value)
+c=no1+no2;
+document.getElementById("txtno3").value=c;
+}
+</script>
+</head>
+<body>
+<h1>Addition Store In Third Textbox</h1><hr>
+<form>
+<pre>
+First Number:<input type="text" id="txtno1">
+
+
+Second Number:<input type="text" id="txtno2">
+
+
+Result:<input type="text" id="txtno3">
+
+
+<input type="button" value="addition" id="btntable" onclick="cal()">
+</form>
+</body>
+</html>
